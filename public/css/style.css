@@ -1,58 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
     background-color: #f1f1f1;
 }
 .container{
-    min-width: 500px;
-    margin: 15% auto;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 25px;
-    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.7);
+    max-width: 968px;
+    margin: 3rem auto;
+    padding: 10px 20px;
+    box-shadow: 10px 5px 10px 3px rgba(0,0,0,.3);
+    border-radius: 10px;
 }
-.container h1, p{
-    text-align: center;
+.container h1{
+    margin: 2rem 0;
 }
+.post{
+    background-color: rgb(30, 179, 38);
+    text-decoration: none;
+    padding: 12px 18px;
+    color: #f1f1f1;
+    border-radius: 5px;
+    transition: 300ms all ease-in-out;
+}
+.content{
+    margin: 15px auto;
+}
+.content a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 12px 12px;
 
-.content-input{
+}
+.first{
+    background-color: rgb(32, 32, 166);
+    padding: 12px 18px;
+    color: #f1f1f1;
+    border-radius: 5px;
+    transition: 300ms all ease-in-out;
+}
+.last{
+    background-color: rgb(180, 37, 37);
+    padding: 12px 18px;
+    color: #f1f1f1;
+    border-radius: 5px;
+    transition: 300ms all ease-in-out;
+
+}
+/* form control */
+.control{
+    text-align: center;
+    padding: 12px;
+    box-shadow: 5px 6px 5px 5px rgba(0,0,0,.3);
+    border-radius: 5px;
+    max-width: 500px ;
+    margin: 3rem auto;
+}
+form{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     row-gap: 1rem;
 }
-.content-input input{
-    width: 400px;
-    height: 30px;
-    margin-top: 12px;
+
+form input{
+    width: 300px;
+    height: 35px;
 }
-.container a{
-    display: block;
-    text-align: center;
-    width: 78px;
-    margin:  15px auto;
-    text-decoration: none;
-    border: 1px solid white;
+button{
     padding: 12px 18px;
-    border-radius: 5px;
-    background-color: #26c406;
-    transform: 300ms;
+    background-color: #14a325;
     color: #f1f1f1;
-}
-.container a:hover{
-    background-color: #26c40674;
-    border-color: #f1f1f1;
-}
-form button{
-    width: 70px;
-    margin: 15px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 18px;
-    background-color: #26c406;
-    
+    cursor: pointer;
 }
